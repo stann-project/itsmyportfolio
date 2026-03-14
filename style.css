@@ -357,7 +357,7 @@ footer {
         flex-direction: column-reverse;
         background: rgba(30,58,138,0.98);
         width: 100%;
-        text-align: right;
+        text-align: center;
         transition: 0.3s;
         padding: 2rem 0;
     }
