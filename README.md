@@ -1,0 +1,1 @@
+# Portfolio Images\n\nAdd your screenshots here:\n\n- quickbooks-dashboard.jpg\n- wordpress-site.jpg\n- financial-report.jpg\n- custom-app.jpg\n\nRecommended size: 400x300px\n\nPlace image files in this folder, then reload index.html.
