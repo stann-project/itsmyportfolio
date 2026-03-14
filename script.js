@@ -15,16 +15,33 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// Smooth Scrolling for Navigation Links
+// Jump to Front Navigation (target ONLY jumps forward)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const href = this.getAttribute('href');
+        const target = document.querySelector(href);
         if (target) {
+            // Reset all first
+            document.querySelectorAll('.section').forEach(section => {
+                section.style.zIndex = '';
+                section.style.transform = '';
+            });
+            
+            // Target jumps front
+            target.style.zIndex = '10';
+            target.style.transform = 'translateZ(0) scale(1.02)';
+            
             target.scrollIntoView({
-                behavior: 'smooth',
+                behavior: 'auto',
                 block: 'start'
             });
+            
+            // Reset target after animation
+            setTimeout(() => {
+                target.style.zIndex = '';
+                target.style.transform = '';
+            }, 300);
         }
     });
 });
