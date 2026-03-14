@@ -394,4 +394,16 @@ footer {
     .hero h1 {
         font-size: 2rem;
     }
+
+    body {
+        font-size: 0.8rem;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.2rem; }
 }
